@@ -12,7 +12,7 @@ function Link(props: Props) {
 
   return (
     <LinkContainer>
-      <a href={href} className={type}>
+      <a href={href} data-testid="custom-link" className={type}>
         {children}
       </a>
     </LinkContainer>
