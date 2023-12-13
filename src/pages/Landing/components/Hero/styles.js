@@ -1,9 +1,16 @@
 import styled from "styled-components";
 import theme from "../../../../helpers/theme/theme";
+import {
+  fadeIn,
+  fadeInOut,
+  slideInUp,
+  zoomOut,
+} from "../../../../helpers/animations";
 
 export const HeroContainer = styled.div`
   width: auto;
   height: 80vh;
+  max-height: 700px;
   margin: 0 5.5%;
   background: ${theme.pallete.black.B50};
   border-radius: 30px;
@@ -12,16 +19,28 @@ export const HeroContainer = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  animation-name: ${slideInUp};
+  animation-delay: 0.3s;
 
   svg.lines {
     position: absolute;
     z-index: 0;
     width: auto;
     height: auto;
+    animation-name: ${fadeIn};
+    animation-delay: 0.5s;
+    animation-duration: 0.6s;
+  }
+  h3,
+  h1 {
+    animation-name: ${slideInUp};
+    animation-delay: 0.4s;
   }
   a {
     margin: 25px auto 0px;
     display: block;
+    animation-name: ${slideInUp};
+    animation-delay: 0.7s;
   }
 `;
 
@@ -54,14 +73,67 @@ export const P = styled.p`
   line-height: 26px;
   letter-spacing: 0.1px;
   margin-top: 13px;
+  animation-name: ${slideInUp};
+  animation-delay: 0.6s;
+  margin-bottom: 0;
+`;
+
+export const AnimationParent = styled.div`
+  width: 850px;
+  height: 850px;
+  margin: -30px auto;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -520px;
 `;
 
 export const AnimationContainer = styled.div`
-  width: auto;
-  height: 800px;
+  margin: 0 auto;
+  animation-name: ${fadeIn};
+  animation-delay: 0.9s;
+  animation-duration: 1s;
   svg {
-    display: blonock;
+    display: block;
     margin: 0 auto;
-    transform: rotate(145deg);
+  }
+`;
+
+export const DotContainer = styled.div`
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  animation-name: ${fadeInOut};
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  &.d1 {
+    left: 300px;
+    top: 75px;
+  }
+  &.d2 {
+    left: 641px;
+    top: 172px;
+    animation-delay: 3.5s;
+    .large {
+      animation-delay: 3.2s;
+    }
+  }
+`;
+export const Dot = styled.div`
+  width: 10px;
+  height: 10px;
+  background: ${theme.pallete.blue.B500};
+  border-radius: 100%;
+  position: absolute;
+  &.large {
+    opacity: 0;
+    animation-name: ${zoomOut};
+    animation-duration: 2s;
+    animation-delay: 2.2s;
   }
 `;

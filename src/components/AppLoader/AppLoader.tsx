@@ -1,6 +1,7 @@
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react";
 import { AppLoaderContainer } from "./styles";
+import { ReactComponent as Logo } from "../../Assets/jetstream.svg";
 
 function AppLoader() {
   const container = useRef<any>(null);
@@ -14,10 +15,10 @@ function AppLoader() {
     });
   }, []);
   return (
-    <AppLoaderContainer
-      ref={container}
-      id="animation-container"
-    ></AppLoaderContainer>
+    <AppLoaderContainer>
+      <div ref={container} id="animation-container"></div>
+      <Logo className="logo" />
+    </AppLoaderContainer>
   );
 }
 

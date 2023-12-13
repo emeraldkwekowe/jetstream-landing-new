@@ -6,7 +6,7 @@ import AppLoader from "./components/AppLoader/AppLoader";
 
 //TODO: Remove this delay, you have seen the loader enough.
 const Landing = lazy(() =>
-  new Promise((resolve) => setTimeout(resolve, 3000)).then(
+  new Promise((resolve) => setTimeout(resolve, 50)).then(
     () => import("./pages/Landing/Landing")
   )
 );

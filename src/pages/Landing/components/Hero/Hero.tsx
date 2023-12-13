@@ -1,9 +1,17 @@
-import { AnimationContainer, H1, H3, HeroContainer, P } from "./styles";
+import {
+  AnimationContainer,
+  AnimationParent,
+  Dot,
+  DotContainer,
+  H1,
+  H3,
+  HeroContainer,
+  P,
+} from "./styles";
 import { ReactComponent as Lines } from "../../../../Assets/Lines.svg";
 import Link from "../Link/Link";
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react";
-import AppLoader from "../../../../components/AppLoader/AppLoader";
 
 function Hero() {
   const container = useRef<any>(null);
@@ -29,13 +37,26 @@ function Hero() {
         <Link href="here" type="flat">
           Get Started
         </Link>
-        <AnimationContainer
-          ref={container}
-          id="animation-container"
-        ></AnimationContainer>
       </div>
+
+      <AnimationParent>
+        <AnimationContainer ref={container} id="animation-container">
+          <MapPoint className="d1" />
+          <MapPoint className="d2" />
+        </AnimationContainer>
+      </AnimationParent>
     </HeroContainer>
   );
 }
+
+const MapPoint = (props: { className: "d1" | "d2" }) => {
+  const { className } = props;
+  return (
+    <DotContainer className={className}>
+      <Dot />
+      <Dot className="large" />
+    </DotContainer>
+  );
+};
 
 export default Hero;
