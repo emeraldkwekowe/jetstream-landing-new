@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "RoobertLight";
+  src: local("RoobertPROTRIAL-Light"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-Light.otf) format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "RoobertMedium";
+  src: local("RoobertPROTRIAL-Medium"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "RoobertRegular";
+  src: local("RoobertPROTRIAL-Regular"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "RoobertSemiBold";
+  src: local("RoobertPROTRIAL-SemiBold"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "RoobertBold";
+  src: local("RoobertPROTRIAL-Bold"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "RoobertHeavy";
+  src: local("RoobertPROTRIAL-Heavy"),
+    url(./Assets/fonts/Roobert/RoobertPROTRIAL-Heavy.otf) format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "RoobertMedium", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
