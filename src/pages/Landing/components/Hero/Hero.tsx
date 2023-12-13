@@ -3,6 +3,7 @@ import { ReactComponent as Lines } from "../../../../Assets/Lines.svg";
 import Link from "../Link/Link";
 import lottie from "lottie-web";
 import { useEffect, useRef } from "react";
+import AppLoader from "../../../../components/AppLoader/AppLoader";
 
 function Hero() {
   const container = useRef<any>(null);

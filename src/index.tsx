@@ -1,16 +1,27 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Landing from "./pages/Landing/Landing";
+import AppLoader from "./components/AppLoader/AppLoader";
+
+//TODO: Remove this delay, you have seen the loader enough.
+const Landing = lazy(() =>
+  new Promise((resolve) => setTimeout(resolve, 3000)).then(
+    () => import("./pages/Landing/Landing")
+  )
+);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
-  <React.StrictMode>
+  //TODO: Fix this guy abeg, remove or something
+  // <React.StrictMode>
+  <Suspense fallback={<AppLoader />}>
     <Landing />
-  </React.StrictMode>
+  </Suspense>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

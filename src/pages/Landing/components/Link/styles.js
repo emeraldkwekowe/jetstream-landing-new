@@ -23,6 +23,9 @@ export const LinkContainer = styled.div`
       font-weight: 700;
       font-size: 15px;
       letter-spacing: 0.4px;
+      &:hover {
+        background: ${green.G600};
+      }
     }
   }
 `;

@@ -8,6 +8,7 @@ const pallete = {
   },
   green: {
     G500: "#03C161",
+    G600: "#1ca761",
   },
   blue: {
     B400: "#1C2499",
