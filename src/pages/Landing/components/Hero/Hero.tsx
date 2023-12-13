@@ -4,17 +4,33 @@ import {
   Dot,
   DotContainer,
   H1,
-  H3,
   HeroContainer,
+  HeroContent,
   P,
 } from "./styles";
 import { ReactComponent as Lines } from "../../../../Assets/Lines.svg";
 import Link from "../Link/Link";
 import lottie from "lottie-web";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { H3 } from "../../styles";
 
 function Hero() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(Math.round(position));
+  };
+
   const container = useRef<any>(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     lottie.loadAnimation({
       animationData: require("../../../../Assets/lottie/hero_globe.json"),
@@ -27,8 +43,8 @@ function Hero() {
   return (
     <HeroContainer>
       <Lines className="lines" />
-      <div style={{ position: "relative", zIndex: 1 }}>
-        <H3>One platform. Unmatched excellence.</H3>
+      <HeroContent>
+        <H3>{}One platform. Unmatched excellence.</H3>
         <H1>E-logistics without the headaches</H1>
         <P>
           Revolutionize Your Supply Chain Management with JVSaaS. <br />
@@ -37,9 +53,9 @@ function Hero() {
         <Link href="here" type="flat">
           Get Started
         </Link>
-      </div>
+      </HeroContent>
 
-      <AnimationParent>
+      <AnimationParent style={{ bottom: `-${445 + scrollPosition / 4}px` }}>
         <AnimationContainer ref={container} id="animation-container">
           <MapPoint className="d1" />
           <MapPoint className="d2" />

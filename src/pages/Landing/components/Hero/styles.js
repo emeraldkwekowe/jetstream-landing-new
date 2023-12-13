@@ -9,8 +9,8 @@ import {
 
 export const HeroContainer = styled.div`
   width: auto;
-  height: 80vh;
-  max-height: 700px;
+  height: 90vh;
+  max-height: 800px;
   margin: 0 5.5%;
   background: ${theme.pallete.black.B50};
   border-radius: 30px;
@@ -43,15 +43,9 @@ export const HeroContainer = styled.div`
     animation-delay: 0.7s;
   }
 `;
-
-export const H3 = styled.h3`
-  font-family: ${theme.typography.secondaryFont};
-  font-size: 14.5px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  color: ${theme.pallete.blue.B400};
-  text-transform: uppercase;
-  margin-top: 65px;
+export const HeroContent = styled.div`
+  position: relative;
+  z-index: 1;
 `;
 
 export const H1 = styled.h1`
@@ -86,7 +80,7 @@ export const AnimationParent = styled.div`
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -520px;
+  bottom: -455px;
 `;
 
 export const AnimationContainer = styled.div`
