@@ -5,6 +5,7 @@ interface Props {
   href: string;
   children: React.ReactNode;
   type?: "text" | "flat" | "border";
+  style?: React.CSSProperties;
 }
 
 function Link(props: Props) {

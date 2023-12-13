@@ -12,12 +12,12 @@ export const LinkContainer = styled.div`
     display: block;
     text-align: center;
     &.text {
-      color: ${black.B00};
+      color: ${black.B500};
       font-weight: 600;
     }
     &.flat {
-      color: ${white.W00};
-      background: ${green.G00};
+      color: ${white.W500};
+      background: ${green.G500};
       width: 150px;
       border-radius: 35px;
       font-weight: 700;
