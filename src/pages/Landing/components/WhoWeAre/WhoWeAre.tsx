@@ -6,13 +6,13 @@ function WhoWeAre() {
   return (
     <WhoWeAreContainer>
       <div className="parent">
-        <AnimateInViewPort>
+        <AnimateInViewPort delay={0.1}>
           <H3>who we are</H3>
           <H2>
             At Jetstream, we understand the complexities of modern logistics
           </H2>
         </AnimateInViewPort>
-        <AnimateInViewPort delay={0.1}>
+        <AnimateInViewPort delay={0.2}>
           <p>
             JVSaaS, our cutting-edge Software-as-a-Service solution, is crafted
             to simplify your supply chain management, providing unparalleled
@@ -20,7 +20,7 @@ function WhoWeAre() {
           </p>
         </AnimateInViewPort>
       </div>
-      <AnimateInViewPort delay={0.1}>
+      <AnimateInViewPort delay={0.2}>
         <img
           src={require("../../../../Assets/jetvision.png")}
           alt="Jetvision dashboard"

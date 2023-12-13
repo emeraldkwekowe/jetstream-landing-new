@@ -26,4 +26,15 @@ export const WhoWeAreContainer = styled.div`
     width: 97%;
     margin-top: 50px;
   }
+  @media (max-width: 800px) {
+    div.parent {
+      flex-direction: column;
+      div {
+        p {
+          margin: 0;
+          margin-top: 0;
+        }
+      }
+    }
+  }
 `;

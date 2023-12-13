@@ -6,14 +6,19 @@ interface Props {
   children: React.ReactNode;
   type?: "text" | "flat" | "border";
   style?: React.CSSProperties;
+  className?: string;
 }
 
 function Link(props: Props) {
-  const { href, children, type = "text" } = props;
+  const { href, children, type = "text", className, style } = props;
 
   return (
-    <LinkContainer>
-      <a href={href} data-testid="custom-link" className={type}>
+    <LinkContainer style={style} className={className}>
+      <a
+        href={href}
+        data-testid="custom-link"
+        className={`${type} ${className}`}
+      >
         {children}
       </a>
     </LinkContainer>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { slideInUp } from "../../../../helpers/animations";
+import theme from "../../../../helpers/theme/theme";
 
 export const HeaderContainer = styled.header`
   height: 90px;
@@ -12,6 +13,21 @@ export const HeaderContainer = styled.header`
     animation-delay: 0.3s;
     animation-name: ${slideInUp};
   }
+  .more {
+    display: none;
+  }
+  @media (max-width: ${theme.responsive.tablet}) {
+    padding: 0px 3% 0px;
+    nav {
+      display: none;
+    }
+    .more {
+      display: block;
+    }
+    .flat {
+      margin-left: auto;
+    }
+  }
 `;
 
 export const LogoContainer = styled.a`
@@ -20,6 +36,11 @@ export const LogoContainer = styled.a`
   animation-name: ${slideInUp};
   svg {
     width: 187px;
+  }
+  @media (max-width: ${theme.responsive.tablet}) {
+    svg {
+      width: 170px;
+    }
   }
 `;
 

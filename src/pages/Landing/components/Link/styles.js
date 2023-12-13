@@ -28,4 +28,11 @@ export const LinkContainer = styled.div`
       }
     }
   }
+  @media (max-width: ${theme.responsive.tablet}) {
+    a.flat {
+      font-size: 13px;
+      padding: 10px;
+      width: 120px;
+    }
+  }
 `;

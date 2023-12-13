@@ -42,7 +42,20 @@ export const HeroContainer = styled.div`
     animation-name: ${slideInUp};
     animation-delay: 0.7s;
   }
+  @media (max-width: ${theme.responsive.tablet}) {
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    h3 {
+      margin-top: 90px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
 `;
+
 export const HeroContent = styled.div`
   position: relative;
   z-index: 1;
@@ -50,7 +63,7 @@ export const HeroContent = styled.div`
 
 export const H1 = styled.h1`
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   max-width: 700px;
   font-size: 71px;
   font-weight: 600;
@@ -62,6 +75,7 @@ export const P = styled.p`
   font-family: ${theme.typography.primaryFontRegular};
   margin: 0 auto;
   width: 80%;
+  max-width: 500px;
   font-size: 17px;
   font-weight: 200;
   line-height: 26px;
@@ -81,6 +95,24 @@ export const AnimationParent = styled.div`
   left: 0;
   right: 0;
   bottom: -455px;
+  @media (max-width: ${theme.responsive.tablet}) {
+    transform: scale(0.7);
+    margin-bottom: 90px;
+    margin-left: -5%;
+  }
+  @media (max-width: 780px) {
+    margin-left: -14%;
+  }
+  @media (max-width: 700px) {
+    transform: scale(0.9);
+    margin-bottom: 20px;
+    margin-left: -20%;
+  }
+  @media (max-width: ${theme.responsive.mobile}) {
+    transform: scale(0.8);
+    margin-bottom: -30px;
+    margin-left: -40%;
+  }
 `;
 
 export const AnimationContainer = styled.div`
