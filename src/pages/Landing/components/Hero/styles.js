@@ -54,7 +54,7 @@ export const HeroContainer = styled.div`
       font-size: 15px;
     }
   }
-  @media (max-width: ${theme.responsive.mobile}) {
+  @media (max-width: 500px) {
     height: 80vh;
     svg.lines {
       height: 100%;

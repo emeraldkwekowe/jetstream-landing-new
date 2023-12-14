@@ -1,7 +1,7 @@
 const pallete = {
   black: {
     B50: "#f4f6fa",
-    B500: "#000000",
+    B500: "#09090B",
   },
   white: {
     W500: "#FFFFFF",

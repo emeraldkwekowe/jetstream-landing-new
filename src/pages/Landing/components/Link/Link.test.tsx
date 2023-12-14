@@ -9,7 +9,7 @@ function RenderComponent({
   children: React.ReactNode;
 }) {
   render(
-    <Link href="hi" type={type}>
+    <Link href="#!" type={type}>
       {children}
     </Link>
   );

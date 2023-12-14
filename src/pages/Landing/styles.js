@@ -19,3 +19,10 @@ export const H3 = styled.h3`
   text-transform: uppercase;
   margin-top: 65px;
 `;
+
+export const P = styled.p`
+  font-family: ${theme.typography.primaryFontRegular};
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 26px;
+`;

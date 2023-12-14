@@ -11,21 +11,21 @@ function Header() {
         <Logo />
       </LogoContainer>
       <Nav>
-        <Link href="hello" type="text">
+        <Link href="#!" type="text">
           Company
         </Link>
-        <Link href="hello" type="text">
+        <Link href="#!" type="text">
           Products
         </Link>
-        <Link href="hello" type="text">
+        <Link href="#!" type="text">
           Pricing
         </Link>
-        <Link href="hello" type="text">
+        <Link href="#!" type="text">
           Contact
         </Link>
       </Nav>
       {/*TODO: Remove useless links*/}
-      <Link href="hfhfhf" className="flat">
+      <Link href="#!" className="flat">
         Get started
       </Link>
       <Link href="#!" className="more">

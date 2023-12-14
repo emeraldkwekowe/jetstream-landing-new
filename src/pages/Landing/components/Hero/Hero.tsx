@@ -50,7 +50,7 @@ function Hero() {
           Revolutionize Your Supply Chain Management with JVSaaS. Efficiency,
           Visibility, Control - Experience the Future of Logistics.
         </P>
-        <Link href="here" type="flat">
+        <Link href="#!" type="flat">
           Get Started
         </Link>
       </HeroContent>
