@@ -9,12 +9,12 @@ export const WhoWeAreContainer = styled.div`
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    div {
+    section {
       flex-basis: 0;
       flex-grow: 1;
       max-width: 480px;
       p {
-        margin-top: 140px;
+        margin-top: 140px !important;
       }
     }
   }
