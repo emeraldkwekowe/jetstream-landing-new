@@ -2,6 +2,8 @@ import AnimateInViewPort from "../../../../components/AnimateInViewPort/AnimateI
 import { H2, H3, P } from "../../styles";
 import Link from "../Link/Link";
 import { ReactComponent as CentralizeClientDocuments } from "../../../../Assets/centralize_client_documents.svg";
+import { ReactComponent as AutomateShippingDocument } from "../../../../Assets/automate_shipping_document.svg";
+import { ReactComponent as ImplementVesselUpdates } from "../../../../Assets/implement_vessel_updates.svg";
 import {
   FeatureDiv,
   FeatureRow,
@@ -44,6 +46,7 @@ function Jetvision() {
 
           <AnimateInViewPort delay={0.1}>
             <FeatureDiv>
+              <ImplementVesselUpdates className="icon" />
               <H3>Implement Vessel Updates</H3>
               <P>
                 Subscribe to automated updates on vessel arrival and other key
@@ -56,11 +59,12 @@ function Jetvision() {
         <FeatureRow>
           <AnimateInViewPort delay={0.2}>
             <FeatureDiv>
-              <H3>Implement Vessel Updates</H3>
+              <AutomateShippingDocument className="icon" />
+              <H3>Automate Shipping Document</H3>
               <P>
-                Subscribe to automated updates on vessel arrival and other key
-                milestones, pushed to your mobile phone. Send some or all of
-                those updates to your clients, automatically.
+                Leverage automation to digitally scan and generate shipping
+                documents, and streamline the process of incorporating
+                corrections and changes
               </P>
             </FeatureDiv>
           </AnimateInViewPort>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from "../../../../helpers/theme/theme";
 
 export const WhoWeAreContainer = styled.div`
   min-height: 800px;

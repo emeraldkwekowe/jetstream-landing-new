@@ -68,6 +68,14 @@ export const FeatureDiv = styled.div`
   overflow: hidden;
   background: ${white.W500};
   margin-bottom: 15px;
+  position: relative;
+  svg.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 64px;
+    margin: 20px 10px;
+  }
   h3 {
     font-size: 17px;
   }
