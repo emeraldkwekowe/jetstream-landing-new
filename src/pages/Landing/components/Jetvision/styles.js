@@ -8,7 +8,7 @@ export const JetvisionContainer = styled.div`
   height: auto;
   min-height: 1000px;
   background: ${black.B50};
-  padding: 0px 20px 0px;
+  padding: 0px 20px 70px;
   display: flex;
   flex-direction: column;
   align-items: center;

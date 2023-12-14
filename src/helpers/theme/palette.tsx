@@ -1,6 +1,8 @@
 const pallete = {
   black: {
     B50: "#f4f6fa",
+    B75: "#B1B2B4",
+    B400: "#171717",
     B500: "#09090B",
   },
   white: {
@@ -13,6 +15,9 @@ const pallete = {
   blue: {
     B400: "#1C2499",
     B500: "#0B115E",
+  },
+  purple: {
+    P50: "#EAEAFE",
   },
 };
 

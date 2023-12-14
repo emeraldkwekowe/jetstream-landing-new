@@ -57,7 +57,7 @@ function Jetvision() {
           </AnimateInViewPort>
         </FeatureRow>
         <FeatureRow>
-          <AnimateInViewPort delay={0.2}>
+          <AnimateInViewPort delay={0.3}>
             <FeatureDiv>
               <AutomateShippingDocument className="icon" />
               <H3>Automate Shipping Document</H3>

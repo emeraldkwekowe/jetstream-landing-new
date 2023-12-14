@@ -21,7 +21,15 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   animation-name: ${slideInUp};
   animation-delay: 0.3s;
-
+  svg.globe_img_mobile {
+    display: none;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
   svg.lines {
     position: absolute;
     z-index: 0;
@@ -54,11 +62,16 @@ export const HeroContainer = styled.div`
       font-size: 15px;
     }
   }
-  @media (max-width: 500px) {
-    height: 80vh;
+  @media (max-width: ${theme.responsive.mobile}) {
+    height: 670px;
+    margin-top: 20px;
+    padding-top: 20px;
     svg.lines {
       height: 100%;
       margin-top: -60px;
+    }
+    svg.globe_img_mobile {
+      display: block;
     }
   }
 `;
@@ -120,9 +133,10 @@ export const AnimationParent = styled.div`
     margin-left: -20%;
   }
   @media (max-width: ${theme.responsive.mobile}) {
-    transform: scale(1.1);
+    transform: scale(0.7);
     margin-bottom: -50px;
     margin-left: -60%;
+    display: none;
   }
 `;
 

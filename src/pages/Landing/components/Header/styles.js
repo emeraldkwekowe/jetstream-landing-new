@@ -28,6 +28,11 @@ export const HeaderContainer = styled.header`
       margin-left: auto;
     }
   }
+  @media (max-width: ${theme.responsive.tablet}) {
+    .flat {
+      display: block;
+    }
+  }
 `;
 
 export const LogoContainer = styled.a`

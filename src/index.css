@@ -46,3 +46,8 @@ body {
   animation-duration: 0.4s;
   animation-fill-mode: both;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}

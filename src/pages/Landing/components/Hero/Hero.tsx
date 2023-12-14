@@ -9,6 +9,7 @@ import {
   P,
 } from "./styles";
 import { ReactComponent as Lines } from "../../../../Assets/Lines.svg";
+import { ReactComponent as Globe } from "../../../../Assets/Globe.svg";
 import Link from "../Link/Link";
 import lottie from "lottie-web";
 import { useEffect, useRef, useState } from "react";
@@ -16,16 +17,15 @@ import { H3 } from "../../styles";
 
 function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const container = useRef<HTMLDivElement>(null!);
+
   const handleScroll = () => {
     const position = window.scrollY;
     setScrollPosition(Math.round(position));
   };
 
-  const container = useRef<any>(null);
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -54,7 +54,7 @@ function Hero() {
           Get Started
         </Link>
       </HeroContent>
-
+      <Globe className="globe_img_mobile" />
       <AnimationParent style={{ bottom: `-${445 + scrollPosition / 4}px` }}>
         <AnimationContainer ref={container} id="animation-container">
           <MapPoint className="d1" />

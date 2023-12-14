@@ -10,14 +10,14 @@ function AnimateInViewPort({
   delay?: number;
 }) {
   return (
-    <motion.div
+    <motion.section
       data-testid="animate-in-viewport-div"
       initial={{ opacity: 0, transform: "translate3d(0, 13%, 0)" }}
       whileInView={{ opacity: 1, transform: "translate3d(0, 0, 0)" }}
       transition={{ duration, delay }}
     >
       {children}
-    </motion.div>
+    </motion.section>
   );
 }
 
