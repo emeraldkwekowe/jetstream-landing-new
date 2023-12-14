@@ -26,6 +26,14 @@ export const LinkContainer = styled.div`
       &:hover {
         background: ${green.G600};
       }
+      &.black {
+        background: ${black.B500};
+        color: ${green.G600};
+        &:hover {
+          background: ${black.B100};
+          color: ${black.B500};
+        }
+      }
     }
   }
   @media (max-width: ${theme.responsive.tablet}) {

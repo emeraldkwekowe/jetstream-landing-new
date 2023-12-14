@@ -1,3 +1,4 @@
+import GetStartedToday from "./components/GetStartedToday/GetStartedToday";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Jetvision from "./components/Jetvision/Jetvision";
@@ -12,6 +13,7 @@ function Landing() {
       <WhoWeAre />
       <Jetvision />
       <WhatSetsUsApart />
+      <GetStartedToday />
     </main>
   );
 }

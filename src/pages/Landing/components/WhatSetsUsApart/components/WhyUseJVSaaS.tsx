@@ -32,23 +32,23 @@ function WhyUseJVSaaS() {
           <div className="flex" style={{ marginTop: 40 }}>
             <Feature
               icon={<SVGJetvision6 />}
-              text="Enhance satisfaction and loyalty for modern clients, who require digitized solutions"
+              text="Enhance satisfaction and loyalty for modern clients, who require digitized solutions."
             />
             <Feature
               icon={<SVGJetvision3 />}
-              text="Differentiate your services with faster payment and document processing time, driven by automation"
+              text="Differentiate your services with faster payment and document processing time, driven by automation."
             />
             <Feature
               icon={<SVGJetvision5 />}
-              text="Improve customer service without increasing your staff size with automated communications"
+              text="Improve customer service without increasing your staff size with automated communications."
             />
             <Feature
               icon={<SVGJetvision4 />}
-              text="Boost your client's shipment volumes, and your revenues, with trade finance products"
+              text="Boost your client's shipment volumes, and your revenues, with trade finance products."
             />
             <Feature
               icon={<SVGJetvision1 />}
-              text="Reduce risks for your clients, and add profit to your business, by reselling cargo insurance"
+              text="Reduce risks for your clients, and add profit to your business, by reselling cargo insurance."
             />
             <Feature
               icon={<SVGJetvision2 />}

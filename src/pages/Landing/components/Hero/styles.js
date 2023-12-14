@@ -10,6 +10,7 @@ import {
 export const HeroContainer = styled.div`
   width: auto;
   height: 90vh;
+  min-height: 740px;
   max-height: 800px;
   margin: 0 5.5%;
   background: ${theme.pallete.black.B50};

@@ -51,7 +51,7 @@ export const WhatSetsUsApartContainer = styled.div`
   background: ${black.B400};
   width: 95%;
   max-width: 1290px;
-  margin: 60px auto;
+  margin: 60px auto 0px;
   border-radius: 45px;
   display: flex;
   justify-content: center;
@@ -184,6 +184,7 @@ export const WhyUseJVSaaSContainer = styled.div`
     .flex {
       a {
         margin: 0;
+        margin-top: 130px;
       }
       div {
         max-width: unset;

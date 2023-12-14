@@ -64,7 +64,7 @@ function Jetvision() {
               <P>
                 Leverage automation to digitally scan and generate shipping
                 documents, and streamline the process of incorporating
-                corrections and changes
+                corrections and changes.
               </P>
             </FeatureDiv>
           </AnimateInViewPort>

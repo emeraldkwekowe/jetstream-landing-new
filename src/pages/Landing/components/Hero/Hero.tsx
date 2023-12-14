@@ -47,8 +47,8 @@ function Hero() {
         <H3>One platform. Unmatched excellence.</H3>
         <H1>E-logistics without the headaches</H1>
         <P>
-          Revolutionize Your Supply Chain Management with JVSaaS. Efficiency,
-          Visibility, Control - Experience the Future of Logistics.
+          Revolutionize your supply chain management with JVSaaS. Efficiency,
+          visibility, control - experience the future of logistics.
         </P>
         <Link href="#!" type="flat">
           Get Started
