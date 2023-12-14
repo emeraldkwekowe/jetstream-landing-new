@@ -55,7 +55,7 @@ function Hero() {
         </Link>
       </HeroContent>
 
-      <AnimationParent>
+      <AnimationParent style={{ bottom: `-${445 + scrollPosition / 4}px` }}>
         <AnimationContainer ref={container} id="animation-container">
           <MapPoint className="d1" />
           <MapPoint className="d2" />
