@@ -36,7 +36,7 @@
 
 body {
   margin: 0 auto;
-  font-family: "RoobertMedium", "Helvetica Neue", sans-serif;
+  font-family: "RoobertMedium", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 1500px;

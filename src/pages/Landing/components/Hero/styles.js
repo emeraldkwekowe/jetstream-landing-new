@@ -54,6 +54,13 @@ export const HeroContainer = styled.div`
       font-size: 15px;
     }
   }
+  @media (max-width: ${theme.responsive.mobile}) {
+    height: 80vh;
+    svg.lines {
+      height: 100%;
+      margin-top: -60px;
+    }
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -65,10 +72,14 @@ export const H1 = styled.h1`
   margin: 0 auto;
   width: 90%;
   max-width: 700px;
-  font-size: 71px;
-  font-weight: 600;
+  font-size: 77px;
   line-height: 70px;
-  letter-spacing: 0.3px;
+  font-family: ${theme.typography.primaryFontSemiBold};
+  letter-spacing: -1.9px;
+  @media (max-width: ${theme.responsive.mobile}) {
+    letter-spacing: -0.9px;
+    font-weight: 300;
+  }
 `;
 
 export const P = styled.p`
@@ -109,9 +120,9 @@ export const AnimationParent = styled.div`
     margin-left: -20%;
   }
   @media (max-width: ${theme.responsive.mobile}) {
-    transform: scale(0.8);
-    margin-bottom: -30px;
-    margin-left: -40%;
+    transform: scale(1.1);
+    margin-bottom: -50px;
+    margin-left: -60%;
   }
 `;
 

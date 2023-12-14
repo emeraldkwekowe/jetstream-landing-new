@@ -44,7 +44,7 @@ function Hero() {
     <HeroContainer>
       <Lines className="lines" />
       <HeroContent>
-        <H3>{}One platform. Unmatched excellence.</H3>
+        <H3>One platform. Unmatched excellence.</H3>
         <H1>E-logistics without the headaches</H1>
         <P>
           Revolutionize Your Supply Chain Management with JVSaaS. Efficiency,
@@ -55,7 +55,7 @@ function Hero() {
         </Link>
       </HeroContent>
 
-      <AnimationParent style={{ bottom: `-${445 + scrollPosition / 4}px` }}>
+      <AnimationParent>
         <AnimationContainer ref={container} id="animation-container">
           <MapPoint className="d1" />
           <MapPoint className="d2" />
