@@ -66,13 +66,15 @@ function Hero() {
         <AnimationContainer ref={container} id="animation-container">
           <MapPoint className="d1" />
           <MapPoint className="d2" />
+          <MapPoint className="d3" />
+          <MapPoint className="d4" />
         </AnimationContainer>
       </AnimationParent>
     </HeroContainer>
   );
 }
 
-const MapPoint = (props: { className: "d1" | "d2" }) => {
+const MapPoint = (props: { className: "d1" | "d2" | "d3" | "d4" }) => {
   const { className } = props;
   return (
     <DotContainer className={className}>

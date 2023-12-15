@@ -162,6 +162,23 @@ export const DotContainer = styled.div`
       animation-delay: 3.2s;
     }
   }
+
+  &.d3 {
+    left: 255px;
+    top: 164px;
+    animation-delay: 4.5s;
+    .large {
+      animation-delay: 4.2s;
+    }
+  }
+  &.d4 {
+    left: 153px;
+    top: 186px;
+    animation-delay: 5.7s;
+    .large {
+      animation-delay: 5.4s;
+    }
+  }
 `;
 export const Dot = styled.div`
   width: 10px;
