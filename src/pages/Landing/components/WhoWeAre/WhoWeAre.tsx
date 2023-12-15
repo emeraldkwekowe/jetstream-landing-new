@@ -22,7 +22,7 @@ function WhoWeAre() {
       </div>
       <AnimateInViewPort delay={0.2}>
         <img
-          src={require("../../../../Assets/jetvision.png")}
+          src={require("../../../../Assets/jetvision@2x.png")}
           alt="Jetvision dashboard"
         />
       </AnimateInViewPort>
