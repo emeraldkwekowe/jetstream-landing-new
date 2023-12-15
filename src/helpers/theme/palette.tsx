@@ -11,6 +11,7 @@ const pallete = {
     W500: "#FFFFFF",
   },
   green: {
+    G50: "#F3F6FA",
     G500: "#03C161",
     G600: "#1ca761",
   },

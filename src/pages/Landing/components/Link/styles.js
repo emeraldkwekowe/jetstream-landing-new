@@ -38,7 +38,7 @@ export const LinkContainer = styled.div`
   }
   @media (max-width: ${theme.responsive.tablet}) {
     a.flat {
-      font-size: 15px;
+      font-size: 14px;
       padding: 10px;
       width: 130px;
     }

@@ -3,7 +3,7 @@ import theme from "../../../../helpers/theme/theme";
 
 const { black, white } = theme.pallete;
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
   width: auto;
   background: ${black.B300};
   a,
