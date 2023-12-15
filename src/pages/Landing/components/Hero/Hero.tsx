@@ -14,6 +14,7 @@ import Link from "../Link/Link";
 import lottie from "lottie-web";
 import { useEffect, useRef, useState } from "react";
 import { H3 } from "../../styles";
+import AnimateInViewPort from "../../../../components/AnimateInViewPort/AnimateInViewPort";
 
 function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -44,15 +45,21 @@ function Hero() {
     <HeroContainer>
       <Lines className="lines" />
       <HeroContent>
-        <H3>One platform. Unmatched excellence.</H3>
-        <H1>E-logistics without the headaches</H1>
-        <P>
-          Revolutionize your supply chain management with JVSaaS. Efficiency,
-          visibility, control - experience the future of logistics.
-        </P>
-        <Link href="#!" type="flat">
-          Get Started
-        </Link>
+        <AnimateInViewPort delay={0.2}>
+          <H3>One platform. Unmatched excellence.</H3>
+        </AnimateInViewPort>
+        <AnimateInViewPort delay={0.3}>
+          <H1>E-logistics without the headaches</H1>
+          <P>
+            Revolutionize your supply chain management with JVSaaS. Efficiency,
+            visibility, control - experience the future of logistics.
+          </P>
+        </AnimateInViewPort>
+        <AnimateInViewPort delay={0.5}>
+          <Link href="#!" type="flat">
+            Get Started
+          </Link>
+        </AnimateInViewPort>
       </HeroContent>
       <Globe className="globe_img_mobile" />
       <AnimationParent style={{ bottom: `-${445 + scrollPosition / 4}px` }}>

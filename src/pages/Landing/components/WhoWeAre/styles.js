@@ -14,7 +14,7 @@ export const WhoWeAreContainer = styled.div`
       flex-grow: 1;
       max-width: 480px;
       p {
-        margin-top: 140px !important;
+        margin-top: 100px !important;
       }
     }
   }

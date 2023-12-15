@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../../helpers/theme/theme";
-import {
-  fadeIn,
-  fadeInOut,
-  slideInUp,
-  zoomOut,
-} from "../../../../helpers/animations";
+import { fadeIn, fadeInOut, zoomOut } from "../../../../helpers/animations";
 
 export const HeroContainer = styled.div`
   width: auto;
@@ -20,7 +15,6 @@ export const HeroContainer = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
-  animation-name: ${slideInUp};
   animation-delay: 0.3s;
   svg.globe_img_mobile {
     display: none;
@@ -40,15 +34,10 @@ export const HeroContainer = styled.div`
     animation-delay: 0.5s;
     animation-duration: 0.6s;
   }
-  h3,
-  h1 {
-    animation-name: ${slideInUp};
-    animation-delay: 0.4s;
-  }
+
   a {
     margin: 25px auto 0px;
     display: block;
-    animation-name: ${slideInUp};
     animation-delay: 0.7s;
   }
   @media (max-width: ${theme.responsive.tablet}) {
@@ -106,8 +95,6 @@ export const P = styled.p`
   line-height: 26px;
   letter-spacing: 0.1px;
   margin-top: 13px;
-  animation-name: ${slideInUp};
-  animation-delay: 0.6s;
   margin-bottom: 0;
 `;
 
@@ -144,7 +131,7 @@ export const AnimationParent = styled.div`
 export const AnimationContainer = styled.div`
   margin: 0 auto;
   animation-name: ${fadeIn};
-  animation-delay: 0.9s;
+  animation-delay: 0.7s;
   animation-duration: 1s;
   svg {
     display: block;
