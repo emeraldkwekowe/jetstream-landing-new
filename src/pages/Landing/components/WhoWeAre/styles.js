@@ -34,4 +34,11 @@ export const WhoWeAreContainer = styled.div`
       }
     }
   }
+  @media (max-width: 800px) {
+    div.parent {
+      section p {
+        margin-top: 20px !important;
+      }
+    }
+  }
 `;
