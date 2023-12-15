@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import GetStartedToday from "./components/GetStartedToday/GetStartedToday";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -14,6 +15,7 @@ function Landing() {
       <Jetvision />
       <WhatSetsUsApart />
       <GetStartedToday />
+      <Footer />
     </main>
   );
 }

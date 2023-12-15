@@ -3,16 +3,23 @@ import styled from "styled-components";
 export const GetStartedTodayContainer = styled.div`
   position: relative;
   overflow: hidden;
-  padding: 20px 0px 50px;
+  padding: 30px 0px 50px;
+  h2 {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
   section {
     width: 100%;
   }
   div.flex {
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     a.flat {
       width: auto;
-      padding: 10px 30px;
+      padding: 13px 27px;
+      margin-bottom: 10px;
     }
   }
   svg {
@@ -32,6 +39,14 @@ export const GetStartedTodayContainer = styled.div`
       height: 300px;
       width: 300px;
       top: 300px;
+    }
+  }
+  @media (max-width: 600px) {
+    svg {
+      right: -140px;
+      height: 300px;
+      width: 300px;
+      top: 400px;
     }
   }
 `;
